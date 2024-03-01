@@ -1,0 +1,137 @@
+/* Efek Animasi Header */
+header {
+    color: white;
+    text-align: center;
+    padding: 1em;
+    animation: fadeInUp 1s ease-out;
+}
+
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Efek Animasi Container Momen-Momen Spesial */
+.celebration {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s ease-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 100px 0;
+    padding: 0;
+    background-image: url(flowerr.jpeg);
+    /* Warna merah muda *    
+    /* Warna teks yang cocok dengan background */
+}
+
+
+
+/* ... Gaya lainnya */
+header h2 {
+    transform-origin: center;
+    animation: rotateText 2s infinite alternate;
+}
+
+@keyframes rotateText {
+    from {
+        transform: rotate(-1deg);
+    }
+
+    to {
+        transform: rotate(1deg);
+    }
+}
+
+.slider-container {
+    overflow: hidden;
+}
+
+.slider {
+    display: flex;
+    transition: transform 1.5s ease-in-out;
+}
+
+.slide {
+    width: 100%;
+    min-width: 100%;
+    object-fit: cover;
+}
+
+.message-board {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    margin: auto;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input,
+textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+    border-color: #555;
+}
+
+button {
+    padding: 12px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+#messages {
+    border-top: 1px solid #ccc;
+    padding-top: 20px;
+}
+
+.message {
+    margin-bottom: 10px;
+}
